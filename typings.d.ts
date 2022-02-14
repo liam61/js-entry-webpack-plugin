@@ -1,11 +1,13 @@
-import { Compiler, Compilation } from 'webpack'
+import { Compiler } from 'webpack'
 
 export = JSEntryWebpackPlugin
 
 declare class JSEntryWebpackPlugin {
-  constructor(public options?: JSEntryWebpackPlugin.Options)
+  constructor(options?: JSEntryWebpackPlugin.Options)
 
   static readonly version: number
+
+  options?: JSEntryWebpackPlugin.Options
 
   apply(compiler: Compiler): void
 }

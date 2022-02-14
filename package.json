@@ -1,7 +1,7 @@
 {
   "name": "js-entry-webpack-plugin",
-  "version": "0.0.1",
-  "description": "create webpack bundles into your js entry",
+  "version": "0.0.2",
+  "description": "creates webpack bundles into your js entry",
   "main": "index.js",
   "types": "typings.d.ts",
   "files": [
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@vue/tsconfig": "^0.1.2",
     "css-loader": "^6.6.0",
+    "js-entry-webpack-plugin": "^0.0.1",
     "mini-css-extract-plugin": "^2.5.3",
     "rimraf": "^3.0.2",
     "style-loader": "^3.3.1",

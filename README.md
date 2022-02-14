@@ -13,7 +13,7 @@
   npm i js-entry-webpack-plugin -D
 ```
 
-This is a [webpack](http://webpack.js.org/) plugin that creates webpack bundles into your js entry. This is especially useful for `Micro Frontend Project` which uses `index.js` as its `entry`
+This is a [webpack](http://webpack.js.org/) plugin that creates webpack bundles into your js entry. This is especially useful for `Micro Frontend Project` which uses js file as its `entry`
 
 This plugin is inspired by [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 
@@ -32,7 +32,6 @@ module.exports = {
   entry: 'index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'index_bundle.js',
   },
   plugins: [new JSEntryWebpackPlugin()],
 }
@@ -70,14 +69,12 @@ Here's an example webpack config illustrating how to use these options
   entry: 'index.js',
   output: {
     path: __dirname + '/custom',
-    filename: 'index_bundle.js'
   },
   plugins: [
     new JSEntryWebpackPlugin({
       filename: 'main.js',
       template: __dirname + '/custom',
       publicPath: 'https://www.custom-cdn.com'
-
     })
   ]
 }
