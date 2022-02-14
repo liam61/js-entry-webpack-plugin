@@ -1,0 +1,13 @@
+.DS_Store
+
+node_modules
+lib
+examples/**/dist
+examples/**/build
+
+package-lock.json
+yarn-error.log
+.npmrc
+yarn.lock
+
+*.bak

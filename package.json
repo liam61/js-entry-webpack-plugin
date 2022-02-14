@@ -1,0 +1,38 @@
+{
+  "name": "js-entry-webpack-plugin",
+  "version": "0.0.1",
+  "description": "create webpack bundles into your js entry",
+  "main": "index.js",
+  "types": "typings.d.ts",
+  "files": [
+    "lib/",
+    "index.js",
+    "typings.d.ts"
+  ],
+  "keywords": [
+    "webpack",
+    "plugin",
+    "js-entry",
+    "js-entry-webpack-plugin"
+  ],
+  "author": "lawler61 <lawler4v@gmail.com> (https://github.com/lawler61)",
+  "license": "MIT",
+  "homepage": "https://github.com/lawler61/js-entry-webpack-plugin",
+  "repository": "https://github.com/lawler61/js-entry-webpack-plugin.git",
+  "scripts": {
+    "examples": "node examples/build-examples.js",
+    "build": "rm -rf lib && tsc"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.1.2",
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0"
+  },
+  "peerDependencies": {
+    "webpack": "^5.20.0"
+  }
+}
